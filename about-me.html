@@ -18,6 +18,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/52e2bf90a9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -77,35 +81,67 @@
       </div>
       <div id="contact">
         <h2>📮 Contact me</h2>
-        <a href="mailto:strahanashleigh01@gmail.com" class="email-link"
-          >strahanashleigh01@gmail.com</a
-        >
-        <div class="mb-3">
-          <label for="formControlInputName" class="form-label">Name</label>
-          <input
-            type="name"
-            class="form-control"
-            id="formControlInputName"
-            placeholder="Introduce yourself!"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="formControlInput" class="form-label">Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="formControlInput1"
-            placeholder="name@example.com"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="formControlTextarea" class="form-label">Message</label>
-          <textarea
-            class="form-control"
-            id="formControlTextarea"
-            rows="3"
-          ></textarea>
-        </div>
+        <form action="mail.php" method="post">
+          <div class="mb-3">
+            <label for="formControlInputName" class="form-label">Name</label>
+            <input
+              type="name"
+              name="name"
+              class="form-control"
+              id="formControlInputName"
+              placeholder="Introduce yourself!"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="formControlInput" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="formControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="formControlTextarea" class="form-label">Message</label>
+            <textarea
+              name="message"
+              class="form-control"
+              id="formControlTextarea"
+              rows="3"
+            ></textarea>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-primary btn-sm" />
+        </form>
+      </div>
+      <div class="col-md-3 text-center">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+            <p>Seabrook, TX 77586 USA</p>
+          </li>
+
+          <li>
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+            <br />
+            <a
+              href="https://www.linkedin.com/in/ashleighstrahan/"
+              target="_blank"
+              >LinkedIn Profile</a
+            >
+          </li>
+
+          <li>
+            <i class="fas fa-envelope mt-4 fa-2x"></i>
+            <p>
+              <a href="mailto:strahanashleigh01@gmail.com"
+                >strahanashleigh01@gmail.com</a
+              >
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
