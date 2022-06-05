@@ -72,12 +72,13 @@ h3 {
 
 .homepage-link {
   color: var(--primary-color);
-  text-align: center;
   display: block;
+  text-decoration: none;
 }
 
-.homepage-link a:hover {
+.homepage-link:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .about-paragraphs {
@@ -106,4 +107,33 @@ h3 {
 .email-link:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.projects img {
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+.project-one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-one p {
+  margin: 100px 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.project-two {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-two p {
+  margin: 100px 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 10px;
 }
