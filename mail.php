@@ -15,3 +15,5 @@ $email_address  = filter_email_header($email_address);
 #Send email
 $headers = "From: $email_address";
 $sent = mail('strahanashleigh01@gmail.com', 'Portfolio Contact', $feedback, $headers);
+
+?>
