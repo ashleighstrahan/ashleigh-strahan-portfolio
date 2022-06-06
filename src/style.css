@@ -1,13 +1,19 @@
 :root {
-  --primary-color: #3bacb6;
-  --secondary-color: #2f8f9d;
+  --primary-color: gray;
+  --secondary-color: lightgray;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
-  font-family: "Overpass", sans-serif;
-  margin: 80px auto;
-  max-width: 800px;
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  height: 100%;
+  color: #fff;
 }
 
 h1,
@@ -22,68 +28,26 @@ h2 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 86px;
 }
 
 h3 {
   font-size: 24px;
-  opacity: 0.7;
+  opacity: 0.85;
+}
+
+.container {
+  max-width: 800px;
+  margin: 150px auto;
+}
+
+.contact-me-container {
+  margin-top: 287px;
 }
 
 .contact-icons {
+  color: #fff;
   margin: 10px auto;
-}
-
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
-}
-
-.navigation-links a {
-  text-align: center;
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  width: 100px;
-  text-decoration: none;
-  transition: all 200ms ease-in-out;
-}
-
-.navigation-links a:hover {
-  cursor: pointer;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
-
-.about-me-link {
-  background-color: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.contact-me-link {
-  background-color: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.projects-link {
-  background-color: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  display: block;
-  text-decoration: none;
-}
-
-.homepage-link:hover {
-  color: var(--primary-color);
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 .about-paragraphs {
@@ -92,7 +56,7 @@ h3 {
 }
 
 .about-paragraphs p {
-  background: #b3e8e5;
+  background-color: var(--primary-color);
   padding: 20px;
   border-radius: 4px;
   font-size: 18px;
@@ -102,7 +66,7 @@ h3 {
 }
 
 .about-paragraphs ul {
-  background: #b3e8e5;
+  background: var(--primary-color);
   padding: 20px 40px;
   border-radius: 4px;
   font-size: 18px;
@@ -111,58 +75,77 @@ h3 {
 }
 
 .skills-section li {
-  background-color: #b3e8e5;
   margin-top: 5px;
 }
 
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--secondary-color);
-  font-size: 28px;
+.contact-icons a {
+  color: #fff;
   text-decoration: none;
 }
 
-.email-link:hover {
-  cursor: pointer;
+.contact-icons a:hover {
+  color: var(--secondary-color);
   text-decoration: underline;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .projects img {
   border: 1px solid #fff;
   max-width: 400px;
-  margin: 40px 20px;
+  height: 300px;
+  margin: 40px 20px 20px;
 }
 
 .projects a {
   text-decoration: none;
 }
 
+.projects a:hover {
+  text-decoration: underline;
+}
+
 .project-one,
 .project-two {
-  margin-top: 20px;
-}
-
-.project-one {
+  line-height: 1.5;
+  margin: 20px 20px;
   background-color: var(--primary-color);
-  display: flex;
-  justify-content: space-between;
-}
-
-.project-one p {
-  margin: 100px 20px;
   border-radius: 4px;
-  padding: 10px;
 }
 
-.project-two {
-  background-color: var(--primary-color);
-  display: flex;
-  justify-content: space-between;
-}
-
+.project-one p,
 .project-two p {
-  margin: 120px 20px;
-  border-radius: 4px;
+  margin: 0 20px;
   padding: 10px;
+  text-align: center;
+}
+
+.nav-menu {
+  background-color: var(--primary-color);
+  opacity: 1;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-menu a {
+  color: #fff;
+  float: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-menu a:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.nav-menu a.active {
+  background-color: #04aa6d;
+  color: white;
 }

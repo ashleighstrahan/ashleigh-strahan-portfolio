@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
@@ -29,11 +29,16 @@
     ></script>
   </head>
   <body>
+    <div class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about-me.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="about-me.html#contact">Contact</a>
+    </div>
     <div class="container">
-      <a href="index.html" class="homepage-link">Back to Homepage</a>
-
       <h1>About me</h1>
       <h3>Front-end developer from Houston, Texas 🤠</h3>
+
       <div class="about-paragraphs">
         <p>
           Hi there! 👋🏼 I am a Front-end Developer proficient in HTML5, CSS3, and
@@ -62,67 +67,85 @@
           <li>GitHub</li>
         </ul>
       </div>
-      <div id="contact">
-        <h2>📮 Contact me</h2>
-        <form name="portfolio-contact" method="”POST”" data-netlify="true">
-          <div class="mb-3">
-            <label for="formControlInputName" class="form-label">Name</label>
-            <input
-              type="text"
-              name="name"
-              class="form-control"
-              id="formControlInputName"
-              placeholder="Introduce yourself!"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="formControlInput" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              name="email"
-              class="form-control"
-              id="formControlInput1"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="formControlTextarea" class="form-label">Message</label>
-            <textarea
-              name="message"
-              class="form-control"
-              id="formControlTextarea"
-              rows="3"
-            ></textarea>
-          </div>
-          <input type="submit" value="Submit" class="btn btn-primary btn-sm" />
-        </form>
-      </div>
-      <div class="row contact-icons mt-4">
-        <div class="col-md-4 text-center">
-          <i class="fas fa-map-marker-alt fa-2x"></i>
-          <p>Seabrook, TX 77586 USA</p>
-        </div>
-        <div class="col-md-4 text-center">
-          <i class="fa-brands fa-linkedin fa-2x"></i>
-          <br />
-          <a
-            href="https://www.linkedin.com/in/ashleighstrahan/"
-            target="_blank"
-            style="text-decoration: none"
-            >LinkedIn Profile</a
+      <div class="contact-me-container">
+        <div id="contact">
+          <h2>📮 Contact me</h2>
+          <form
+            name="portfolio-contact"
+            class="contact-form"
+            method="”POST”"
+            data-netlify="true"
           >
+            <div class="mb-3">
+              <label for="formControlInputName" class="form-label">Name</label>
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                id="formControlInputName"
+                placeholder="Introduce yourself!"
+              />
+            </div>
+            <div class="mb-2">
+              <label for="formControlInput" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="formControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-2">
+              <label for="formControlTextarea" class="form-label"
+                >Message</label
+              >
+              <textarea
+                name="message"
+                class="form-control"
+                id="formControlTextarea"
+                rows="3"
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              class="btn btn-primary btn-md"
+            />
+          </form>
         </div>
-        <div class="col-md-4 text-center">
-          <i class="fas fa-envelope fa-2x"></i>
-          <p>
-            <a
-              href="mailto:strahanashleigh01@gmail.com"
-              style="text-decoration: none"
-              >strahanashleigh01@gmail.com</a
-            >
-          </p>
+        <div class="contact-icons">
+          <div class="row contact-icons mt-4">
+            <div class="col-md-4 text-center">
+              <p>
+                <a href="https://github.com/ashleighstrahan" target="_blank"
+                  ><i class="fa-brands fa-github-square fa-2x"></i>
+                  <br />
+                  GitHub</a
+                >
+              </p>
+            </div>
+            <div class="col-md-4 text-center">
+              <a
+                href="https://www.linkedin.com/in/ashleighstrahan/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin fa-2x"></i>
+                <br />
+                LinkedIn</a
+              >
+            </div>
+            <div class="col-md-4 text-center">
+              <p>
+                <a href="mailto:strahanashleigh01@gmail.com"
+                  ><i class="fas fa-envelope fa-2x"></i>
+                  <br />
+                  strahanashleigh01@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
