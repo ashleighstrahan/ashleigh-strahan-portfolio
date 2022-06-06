@@ -163,7 +163,6 @@ h3 {
 
 .project-two p {
   margin: 120px 20px;
-  border: 2px solid var(--primary-color);
   border-radius: 4px;
   padding: 10px;
 }
