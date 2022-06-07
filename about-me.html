@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link
       rel="shortcut icon"
-      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/dna_1f9ec.png"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/snow-capped-mountain_1f3d4-fe0f.png"
       type="image/x-icon"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
@@ -29,93 +29,113 @@
     ></script>
   </head>
   <body>
-    <div class="nav-menu">
-      <a href="index.html">Home</a>
-      <a href="about-me.html">About Me</a>
-      <a href="projects.html">Projects</a>
-      <a href="about-me.html#contact">Contact</a>
-    </div>
     <div class="container">
-      <h1>About me</h1>
-      <h3>Front-end developer from Houston, Texas 🤠</h3>
-
-      <div class="about-paragraphs">
-        <p>
-          Hi there! 👋🏼 I am a Front-end Developer proficient in HTML5, CSS3, and
-          JavaScript languages with experience utilizing Bootstrap and React to
-          create well constructed and reactive applications/sites. I love
-          learning and strive to continue building my knowledge base of coding
-          languages and frameworks.
-          <br />
-          <br />
-          A little bit about my history, I was in the United States Army from
-          2012 to 2016. My time in the service equipped me with a drive,
-          attention to detail and discipline that I apply to every project and
-          task I commit myself to.
-          <br />
-          <br />
-        </p>
-        <ul class="skills-section">
-          <strong>Skills:</strong>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>Bootstrap</li>
-          <li>React</li>
-          <li>APIs</li>
-          <li>Git</li>
-          <li>GitHub</li>
-        </ul>
-      </div>
-      <div class="contact-me-container">
-        <div id="contact">
-          <h2>📮 Contact me</h2>
-          <form
-            name="portfolio-contact"
-            class="contact-form"
-            method="”POST”"
-            data-netlify="true"
-          >
-            <div class="mb-3">
-              <label for="formControlInputName" class="form-label">Name</label>
-              <input
-                type="text"
-                name="name"
-                class="form-control"
-                id="formControlInputName"
-                placeholder="Introduce yourself!"
-              />
-            </div>
-            <div class="mb-2">
-              <label for="formControlInput" class="form-label"
-                >Email address</label
-              >
-              <input
-                type="email"
-                name="email"
-                class="form-control"
-                id="formControlInput1"
-                placeholder="name@example.com"
-              />
-            </div>
-            <div class="mb-2">
-              <label for="formControlTextarea" class="form-label"
-                >Message</label
-              >
-              <textarea
-                name="message"
-                class="form-control"
-                id="formControlTextarea"
-                rows="3"
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              class="btn btn-primary btn-md"
-            />
-          </form>
+      <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">PerfectPixelDeveloper</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarText"
+        >
+          <ul class="navbar-nav mr-auto mb-0 h5">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-me.html#contact">Contact Me</a>
+            </li>
+          </ul>
         </div>
+      </nav>
+      <div class="about-me-section">
+        <h1>About me</h1>
+        <h3>Front-end developer from Houston, Texas</h3>
+
+        <div class="about-content">
+          <p>
+            Hello World!
+            <br />
+            I am a Front-end Developer proficient in HTML5, CSS3, and JavaScript
+            languages with experience utilizing Bootstrap to create responsive
+            and well constructed applications/sites. I love learning and strive
+            to continue building my knowledge base of coding languages and
+            frameworks.
+          </p>
+
+          <ul class="skills-section">
+            <strong>Skills:</strong>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>React</li>
+            <li>APIs</li>
+            <li>Git</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-me-section" id="contact">
+        <h2>Contact Me</h2>
+        <form
+          name="portfolio-contact"
+          class="contact-form"
+          method="”POST”"
+          data-netlify="true"
+        >
+          <div class="mb-3">
+            <label for="formControlInputName" class="form-label">Name</label>
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="formControlInputName"
+              placeholder="Introduce yourself!"
+            />
+          </div>
+          <div class="mb-2">
+            <label for="formControlInput" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="formControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-2">
+            <label for="formControlTextarea" class="form-label">Message</label>
+            <textarea
+              name="message"
+              class="form-control"
+              id="formControlTextarea"
+              rows="3"
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+            class="btn btn-secondary btn-md"
+          />
+        </form>
         <div class="contact-icons">
           <div class="row contact-icons mt-4">
             <div class="col-md-4 text-center">
@@ -128,15 +148,6 @@
               </p>
             </div>
             <div class="col-md-4 text-center">
-              <a
-                href="https://www.linkedin.com/in/ashleighstrahan/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin fa-2x"></i>
-                <br />
-                LinkedIn</a
-              >
-            </div>
-            <div class="col-md-4 text-center">
               <p>
                 <a href="mailto:strahanashleigh01@gmail.com"
                   ><i class="fas fa-envelope fa-2x"></i>
@@ -145,9 +156,33 @@
                 >
               </p>
             </div>
+            <div class="col-md-4 text-center">
+              <a
+                href="https://www.linkedin.com/in/ashleighstrahan/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin fa-2x"></i>
+                <br />
+                LinkedIn</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
