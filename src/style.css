@@ -37,6 +37,11 @@ h3 {
   opacity: 0.9;
 }
 
+.navbar-nav > li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .content {
   max-width: 800px;
   margin: 150px auto;
@@ -61,7 +66,7 @@ h3 {
 }
 
 .about-me-section {
-  margin: 150px auto 0;
+  margin: 100px auto 0;
   max-width: 800px;
 }
 
@@ -94,6 +99,14 @@ h3 {
   text-decoration: underline;
 }
 
+.profile-photo {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  opacity: 0.95;
+  width: 200px;
+}
+
 .about-content {
   background-color: var(--primary-color);
   border-radius: 4px;
@@ -108,8 +121,8 @@ h3 {
   border-radius: 4px;
   font-size: 22px;
   line-height: 1.5;
-  text-align: center;
   margin: 10px;
+  text-align: center;
 }
 
 .about-content ul {
@@ -125,6 +138,7 @@ h3 {
 }
 
 .projects {
+  margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
 }
