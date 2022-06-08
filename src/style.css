@@ -157,9 +157,10 @@ h3 {
   text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .navbar-nav > li {
     font-size: 20px;
+    margin-left: 5px;
   }
   .hero_title {
     font-size: 43px;
