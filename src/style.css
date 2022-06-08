@@ -74,7 +74,7 @@ h3 {
   background-color: var(--primary-color);
   border-radius: 4px;
   color: var(--secondary-color);
-  margin: 300px auto 100px;
+  margin: 300px 8px 100px;
   max-width: 800px;
   opacity: 0.9;
   padding: 10px 20px;
@@ -132,7 +132,7 @@ h3 {
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
-  margin: 8px auto 0;
+  margin: 8px 8px 0;
 }
 
 .skills-section li {
