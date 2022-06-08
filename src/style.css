@@ -156,3 +156,15 @@ h3 {
   padding: 10px;
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  .hero_title {
+    font-size: 43px;
+  }
+  .hero_desc {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 82px;
+  }
+}
