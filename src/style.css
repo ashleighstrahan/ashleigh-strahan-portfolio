@@ -170,7 +170,7 @@ footer a {
 }
 
 .projects-section {
-  margin: 100px auto 50px;
+  margin: 100px auto 100px;
   max-width: 800px;
 }
 
@@ -239,7 +239,7 @@ footer a {
   background-color: var(--primary-color);
   border-radius: 4px;
   line-height: 1.5;
-  margin: 20px 20px 100px;
+  margin: 20px;
   max-width: 350px;
   opacity: 0.95;
 }
