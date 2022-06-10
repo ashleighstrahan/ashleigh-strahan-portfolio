@@ -37,6 +37,21 @@ h3 {
   opacity: 0.9;
 }
 
+hr {
+  margin: 10px;
+}
+
+footer {
+  height: 40px;
+  padding-top: 3px;
+}
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 25px;
+}
+
 .navbar-nav > li {
   margin-left: 20px;
   margin-right: 20px;
@@ -65,16 +80,80 @@ h3 {
   color: white;
 }
 
+.highlighted-skills-section {
+  margin: 900px auto 0;
+}
+
+.highlighted-skills-section h3 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.highlighted-skills-section p {
+  font-size: 20px;
+}
+
+.featured-projects-section {
+  margin: 250px auto 200px;
+  max-width: 1000px;
+}
+
+.featured-projects-section h3 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.featured-projects h4 {
+  margin: 50px 0 20px;
+}
+
+.featured-projects {
+  color: var(--secondary-color);
+}
+
+.btn-project {
+  background-color: #8c9295;
+  color: #fff;
+}
+
+.footer-brand {
+  color: black;
+  font-size: 20px;
+}
+
 .about-me-section {
-  margin: 100px auto 0;
+  margin: 100px auto 100px;
   max-width: 800px;
 }
 
 .contact-me-section {
+  margin: 100px auto 50px;
+  max-width: 800px;
+}
+
+.contact-me-info {
+  margin: 80px auto 100px;
+}
+
+.contact-me-info img {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.contact-me-info h4 {
+  font-size: 26px;
+  margin-top: 30px;
+}
+
+.contact-me-info p {
+  font-size: 18px;
+}
+
+.contact-me-card {
   background-color: var(--primary-color);
   border-radius: 4px;
   color: var(--secondary-color);
-  margin: 300px 8px 100px;
+  margin: 20px 8px 100px;
   max-width: 800px;
   opacity: 0.9;
   padding: 10px 20px;
@@ -126,6 +205,10 @@ h3 {
   text-align: center;
 }
 
+.skills-section h4 {
+  font-size: 25px;
+}
+
 .about-content ul {
   background-color: var(--primary-color);
   border-radius: 4px;
@@ -139,6 +222,7 @@ h3 {
 
 .skills-section li {
   margin-top: 5px;
+  list-style-type: none;
 }
 
 .project-block {
