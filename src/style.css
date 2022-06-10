@@ -239,7 +239,7 @@ footer a {
   background-color: var(--primary-color);
   border-radius: 4px;
   line-height: 1.5;
-  margin: 20px 20px;
+  margin: 20px 20px 100px;
   max-width: 350px;
   opacity: 0.95;
 }
