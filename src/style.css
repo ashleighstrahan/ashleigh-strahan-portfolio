@@ -1,6 +1,6 @@
 :root {
   --primary-color: #f8f9fa;
-  --secondary-color: #8c9295;
+  --secondary-color: black;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -160,6 +160,10 @@ footer a {
   max-width: 800px;
 }
 
+.projects-section a {
+  margin-top: 10px;
+}
+
 .contact-icons {
   color: var(--secondary-color);
   margin: 10px auto;
@@ -194,11 +198,9 @@ footer a {
   padding: 20px;
   border-radius: 4px;
   font-size: 20px;
-  font-weight: 600;
   line-height: 1.5;
   margin: 8px;
   justify-content: stretch;
-  text-align: center;
 }
 
 .skills-section h4 {
