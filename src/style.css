@@ -5,15 +5,8 @@
 }
 
 body {
-  background: url("../images/background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   font-family: "Playfair Display", serif;
-  margin: 0 auto;
   height: 100%;
-  color: #fff;
 }
 
 h1,
@@ -57,6 +50,18 @@ footer a {
   margin-right: 20px;
 }
 
+.hero {
+  background: linear-gradient(lightblue, lightgreen);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
 .hero_title {
   font-size: 4.5rem;
 }
@@ -68,11 +73,7 @@ footer a {
 
 .hero-text {
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  margin-top: 45vh;
 }
 
 .highlighted-skills-section {
@@ -80,7 +81,7 @@ footer a {
 }
 
 .highlighted-skills-section h3 {
-  font-size: 48px;
+  font-size: 42px;
   margin-bottom: 50px;
 }
 
@@ -89,13 +90,13 @@ footer a {
 }
 
 .featured-projects-section {
-  margin: 250px auto 200px;
+  margin: 150px auto 200px;
   max-width: 1000px;
 }
 
 .featured-projects-section h3 {
-  font-size: 48px;
-  margin-bottom: 50px;
+  font-size: 42px;
+  margin-bottom: 30px;
 }
 
 .featured-projects h4 {
