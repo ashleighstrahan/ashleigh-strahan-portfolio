@@ -141,8 +141,7 @@ h3 {
   margin-top: 5px;
 }
 
-.project-one,
-.project-two {
+.project-block {
   background-color: var(--primary-color);
   border-radius: 4px;
   line-height: 1.5;
@@ -151,8 +150,7 @@ h3 {
   opacity: 0.95;
 }
 
-.project-one p,
-.project-two p {
+.project-block p {
   color: var(--secondary-color);
   margin: 0 20px;
   padding: 10px;
