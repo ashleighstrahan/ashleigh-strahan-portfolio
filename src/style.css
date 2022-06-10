@@ -1,20 +1,22 @@
 :root {
+  --heading-font: "Playfair Display", serif;
+  --body-font: "Poppins", sans-serif;
   --primary-color: #f8f9fa;
   --secondary-color: black;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  --box-shadow: 0px 8px 16px rgba(149, 157, 165, 0.2);
 }
 
 body {
-  font-family: "Playfair Display", serif;
-  height: 100%;
+  font-family: var(--body-font);
 }
 
 h1,
 h2,
 h3 {
+  font-family: var(--heading-font);
   text-align: center;
-  margin: 0;
-  text-shadow: var(--box-shadow);
+  text-shadow: var(--text-shadow);
 }
 
 h2 {
@@ -30,8 +32,13 @@ h3 {
   opacity: 0.9;
 }
 
+h4 {
+  font-family: var(--heading-font);
+}
+
 hr {
   margin: 10px;
+  border-top: 1px dashed var(--secondary-color);
 }
 
 footer {
@@ -213,7 +220,6 @@ footer a {
   padding: 20px 40px 10px;
   border-radius: 4px;
   font-size: 18px;
-  font-weight: 600;
   line-height: 1.5;
   margin: 8px 8px 0;
 }
