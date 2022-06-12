@@ -12,6 +12,11 @@ body {
   font-family: var(--body-font);
 }
 
+nav a {
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
 h1,
 h2,
 h3 {
@@ -129,6 +134,11 @@ footer a {
 .footer-brand {
   color: var(--secondary-color);
   font-size: 20px;
+}
+
+.footer-name {
+  color: var(--secondary-color);
+  font-size: 18px;
 }
 
 .about-me-section {
@@ -281,7 +291,10 @@ footer a {
     font-size: 1.5rem;
   }
   .footer-brand {
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .footer-name {
+    font-size: 10px;
   }
   .featured-projects h4 {
     margin-top: 5px;
