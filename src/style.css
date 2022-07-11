@@ -7,15 +7,20 @@
   --box-shadow: 0px 8px 16px rgba(149, 157, 165, 0.2);
 }
 
-body {
-  color: var(--secondary-color);
-  font-family: var(--body-font);
+nav{
+  padding: 0!important;
 }
 
 nav a {
   color: var(--secondary-color);
   font-size: 20px;
 }
+
+body {
+  color: var(--secondary-color);
+  font-family: var(--body-font);
+}
+
 
 h1,
 h2,
@@ -156,8 +161,7 @@ footer a {
 }
 
 .contact-me-info img {
-  max-width: 300px;
-  border-radius: 50%;
+  max-width: 350px;
 }
 
 .contact-me-info h4 {
@@ -282,5 +286,11 @@ footer a {
   }
   .featured-projects img {
     display: none;
+  }
+  .contact-me-info{
+    margin-top: 10px;
+  }
+  .contact-me-section h1 {
+    font-size: 65px;
   }
 }
