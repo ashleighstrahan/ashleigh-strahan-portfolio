@@ -210,39 +210,20 @@ footer a {
   width: 200px;
 }
 
-.about-content {
+.about-content,
+.skills-content {
+  background-color: var(--primary-color);
+  border-radius: 4px;
   color: var(--secondary-color);
   margin: 50px 0;
-}
-
-.about-content p {
-  background-color: var(--primary-color);
-  border-radius: 4px;
   padding: 20px;
-  border-radius: 4px;
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 8px;
-  justify-content: stretch;
-}
-
-.skills-section h4 {
-  font-size: 25px;
-}
-
-.about-content ul {
-  background-color: var(--primary-color);
-  border-radius: 4px;
-  padding: 20px 40px 10px;
-  border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
-  margin: 8px 8px 0;
 }
 
-.skills-section li {
-  margin-top: 5px;
-  list-style-type: none;
+.skills-content h4 {
+  font-size: 24px;
+  text-align: center;
 }
 
 .project-display {
