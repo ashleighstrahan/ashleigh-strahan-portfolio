@@ -207,11 +207,13 @@ footer a {
 }
 
 .profile-photo {
+  border: 10px double var(--secondary-color);
   border-radius: 50%;
   display: block;
   margin: 0 auto;
   opacity: 0.95;
   width: 200px;
+  height: 230px;
 }
 
 .about-content,
