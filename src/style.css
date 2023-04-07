@@ -205,20 +205,14 @@ footer a {
   text-decoration: underline;
 }
 
-.profile-photo {
-  border: 10px double var(--secondary-color);
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-  opacity: 0.95;
-  width: 200px;
-  height: 230px;
+.about-row {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  margin: 50px 0px;
 }
 
 .about-content,
 .skills-content {
-  background-color: var(--primary-color);
-  border-radius: 4px;
   color: var(--secondary-color);
   margin: 50px 0;
   padding: 20px;
@@ -303,5 +297,13 @@ footer a {
   }
   .contact-me-section h1 {
     font-size: 65px;
+  }
+  .about-content {
+    margin: 25px 0 10px;
+    text-align: center;
+    padding: 20px 4px;
+  }
+  .skills-content {
+    margin-top: 0px;
   }
 }
