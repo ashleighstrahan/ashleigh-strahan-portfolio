@@ -7,7 +7,7 @@ function changeText() {
   currentIndex = (currentIndex + 1) % textValues.length;
 }
 
-setInterval(changeText, 2900);
+setInterval(changeText, 3000);
 
 const icons = document.querySelectorAll("#skills-section-icons");
 const centerOfPage = window.innerHeight / 2;

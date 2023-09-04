@@ -91,7 +91,7 @@ footer a {
 
 #hero_desc {
   font-size: 2rem;
-  animation: fadeText 2.9s infinite;
+  animation: fadeText 3s infinite;
 }
 
 @keyframes fadeText {
