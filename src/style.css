@@ -89,9 +89,18 @@ footer a {
   font-weight: 700;
 }
 
-.hero_desc {
+#hero_desc {
   font-size: 2rem;
-  opacity: 0.85;
+  animation: fadeText 2.9s infinite;
+}
+
+@keyframes fadeText {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.85;
+    }
 }
 
 .hero-text {
@@ -106,6 +115,12 @@ footer a {
 .highlighted-skills-section h3 {
   font-size: 42px;
   margin-bottom: 50px;
+}
+
+#skills-section-icons {
+  opacity: 0.3; 
+  transition: opacity 2s; 
+  padding: 0px;
 }
 
 .highlighted-skills-section p {
@@ -196,6 +211,35 @@ footer a {
   margin: 10px auto;
 }
 
+#contact-socials-icons {
+  margin-top: 30px;
+}
+
+#contact-socials-icons a{
+  color: var(--secondary-color);
+  font-size: 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#contact-socials-icons i{
+  border: 3px solid white;
+  border-radius: 6px;
+}
+
+#contact-socials-icons i:hover{
+  background-color: var(--secondary-color);
+  border-left: 3px solid var(--secondary-color);
+  border-right: 3px solid var(--secondary-color);
+  border-top: 0px solid var(--secondary-color);
+  border-bottom: 0px solid var(--secondary-color);
+  box-shadow: 0px 0px 6px var(--secondary-color);
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: all ease-in 200ms;
+}
+
 .contact-icons a {
   color: var(--secondary-color);
   text-decoration: none;
@@ -205,19 +249,19 @@ footer a {
   text-decoration: underline;
 }
 
-.about-row {
-  background-color: var(--primary-color);
-  border-radius: 10px;
-  margin: 50px 0px;
-}
-
 .about-content,
 .skills-content {
+  background-color: var(--primary-color);
+  border-radius: 10px;
   color: var(--secondary-color);
-  margin: 50px 0;
+  margin: 100px 0;
   padding: 20px;
   font-size: 18px;
   line-height: 1.5;
+}
+
+.skills-content {
+  padding: 20px 100px;
 }
 
 .skills-content h4 {
@@ -263,6 +307,15 @@ footer a {
   line-height: 1.5;
 }
 
+@media (max-width: 1000px){
+   .featured-projects h4 {
+    margin-top: 5px;
+  }
+  .featured-projects p {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 767px) {
   h1 {
     font-size: 82px;
@@ -280,23 +333,48 @@ footer a {
   .hero_desc {
     font-size: 1.5rem;
   }
+  #skills-section-icons i{
+    font-size: 25px; 
+  }
+  .highlighted-skills-section{
+    margin-top: 750px;
+  }
+  .highlighted-skills-section h3{
+    font-size: 36px;
+  }
+  .highlighted-skills-section p{
+    font-size: 12px;
+  }
   .footer-brand {
     font-size: 10px;
   }
   .footer-name {
     font-size: 10px;
   }
+  .featured-projects-section h3 {
+    font-size: 32px;
+  }
   .featured-projects h4 {
     margin-top: 5px;
+    text-align: center;
   }
   .featured-projects img {
     display: none;
   }
+  .featured-projects {
+    text-align: center;
+  }
   .contact-me-info {
     margin-top: 10px;
   }
+  .contact-me-info img{
+    display: none;
+  }
   .contact-me-section h1 {
-    font-size: 65px;
+    font-size: 57px;
+  }
+  #contact-socials-icons a{
+    font-size: 35px;
   }
   .about-content {
     margin: 25px 0 10px;
@@ -305,5 +383,6 @@ footer a {
   }
   .skills-content {
     margin-top: 0px;
-  }
+    padding: 20px 0px;
+}
 }

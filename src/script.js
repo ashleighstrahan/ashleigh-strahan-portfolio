@@ -1,18 +1,26 @@
-function changeJobTitle() {
-  const jobTitles = [
-    "QA Engineer",
-    "Java Developer",
-    "Front-End Developer"
-  ];
-  const currentJobTitle = document.getElementById("hero_desc").textContent;
-  const currentIndex = jobTitles.indexOf(currentJobTitle);
+const textValues = ["QA Engineer", "Java Developer", "Front-End Developer"];
+let currentIndex = 0;
 
-  if (currentIndex !== -1) {
-    const nextIndex = (currentIndex + 1) % jobTitles.length;
-    const nextJobTitle = jobTitles[nextIndex];
-    document.getElementById("hero_desc").textContent = nextJobTitle;
-  }
+function changeText() {
+  const changingText = document.getElementById("hero_desc");
+  changingText.textContent = textValues[currentIndex];
+  currentIndex = (currentIndex + 1) % textValues.length;
 }
 
-// Set an interval to change the job title every 3 seconds
-setInterval(changeJobTitle, 2000);
+setInterval(changeText, 2900);
+
+const icons = document.querySelectorAll("#skills-section-icons");
+const centerOfPage = window.innerHeight / 2;
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY + centerOfPage;
+
+  icons.forEach((icon) => {
+    const iconRect = icon.getBoundingClientRect();
+    const iconMiddle = iconRect.top + iconRect.height / 2;
+
+    if (iconMiddle < scrollPosition) {
+      icon.style.opacity = 1;
+    }
+  });
+});
